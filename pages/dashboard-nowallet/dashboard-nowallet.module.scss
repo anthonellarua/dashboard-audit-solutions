@@ -1,0 +1,21 @@
+.dashboardnowallet{
+    @apply relative flex items-center justify-center h-screen h-screen p-10 bg-white;
+    &__container{
+        @apply flex justify-between items-center h-full w-full rounded-3xl px-28 py-14 bg-gradient-1;
+        p{
+            @apply w-2/4 max-w-md text-4xl text-primary_600_v2 font-semibold;
+        }
+    }
+    &__imagecontainer{
+        @apply h-full w-2/4;
+        img{
+            @apply h-full w-full object-cover rounded-3xl;
+        }
+    }
+    &__firstcircle{
+        @apply absolute bottom-[-160px] left-[-40px] ;
+    }
+    &__secondcircle{
+        @apply absolute top-28 right-24;
+    }
+}

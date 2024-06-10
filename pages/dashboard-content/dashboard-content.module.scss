@@ -1,0 +1,103 @@
+.dashboardnocontent{
+    @apply relative flex items-center justify-center p-10 bg-white;
+    &__container{
+        @apply flex flex-col rounded-3xl bg-gradient-1 justify-between items-center px-28 py-14 h-full w-full gap-9;
+    }
+    &__titlesection{
+        @apply flex justify-between items-center w-full;
+        p{
+            @apply text-4xl text-primary_600_v2 font-semibold;
+        }
+        div{
+            @apply flex justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-5 py-3 text-primary_400_v2 font-medium cursor-pointer;
+        }
+    }
+    &__contentsection{
+        @apply w-full flex justify-between h-full gap-4;
+    }
+    &__side{
+        @apply flex flex-col rounded-3xl w-1/2 h-full min-h-[500px] p-8 gap-6 bg-white ;
+        p{
+            @apply text-xl font-bold text-primary_600_v2;
+        }
+    }
+    .list{
+        @apply flex flex-col gap-3 overflow-auto h-[400px];
+        
+    }
+    &__itemlistliveaudit{
+        @apply flex justify-between rounded-3xl py-5 px-6 bg-secondary_200_v2;
+        &__title{
+            @apply font-bold text-primary_400_v2 text-base;
+        }
+        &__username{
+            @apply flex gap-3;
+            span{
+                @apply text-primary_600_v2;
+            }
+        }
+        &__button{
+            @apply flex items-center justify-center rounded-full px-6 py-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+        }
+    }
+    &__itemlistauditor{
+        @apply flex justify-between rounded-3xl py-5 px-6 bg-secondary_600_v2;
+        &__spaceleft{
+            @apply flex justify-start items-center w-1/4 gap-2;
+            span{
+                @apply text-primary_600_v2;
+            }
+        }
+        &__space{
+            @apply flex justify-center items-center w-1/4 gap-2;
+            span{
+                @apply text-primary_600_v2;
+            }
+        }
+        &__spaceright{
+            @apply flex justify-end items-center w-1/4 gap-2;
+            span{
+                @apply text-primary_600_v2;
+            }
+        }
+        .viewprofile{
+            @apply font-medium underline decoration-1 cursor-pointer;
+        }
+    }
+    &__previoussection{
+        @apply flex flex-col justify-start w-full gap-6;
+        h3{
+            @apply text-xl text-primary_400_v2 font-bold;
+        }
+    }
+    &__previoustable{
+        @apply flex flex-col w-full rounded-3xl p-6 gap-6 bg-white;
+        &__header{
+            @apply flex justify-between;
+            div{
+                @apply flex justify-center w-1/4 p-2;
+                span{
+                    @apply font-bold text-sm text-primary_600_v2;
+                }
+            }
+        }
+        &__content{
+            @apply flex flex-col gap-3;
+        }
+    }
+    &__itemtable{
+        @apply flex justify-between rounded-full bg-secondary_600_v2;
+        div{
+            @apply flex justify-center gap-2 items-center w-1/4 p-2;
+            span{
+                @apply text-sm truncate;
+            }
+        }
+    }
+    &__firstcircle{
+        @apply absolute top-44 left-[-36px];
+    }
+    &__secondcircle{
+        @apply absolute bottom-20 right-0;
+    }
+}
