@@ -27,7 +27,7 @@ export default function MindNFT() {
                                 <li><Image width={14} height={14} src="/icons/check-icon.png" alt=""/> <span>Your Own Developer Escrow Contract to Post Bounties</span></li>
                             </ul>
                         </div>
-                        <span>Apply & Mint</span>
+                        <span className={styles.mindnft__price__button}>Apply & Mint</span>
                     </div>
                 </div>
                 <img src="adorno-2.png" alt="" className={styles.mindnft__firstcircle} />
