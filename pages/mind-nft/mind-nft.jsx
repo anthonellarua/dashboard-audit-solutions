@@ -10,7 +10,8 @@ export default function MindNFT() {
                         <h2>Protocol NFT</h2>
                         <p>ProofOfProtocol NFTs are necessary for developers to engage with Hyacinth Auditors and begin offering bounties on their code to auditors. To publish an auditor bounty for your project through Hyacinth & have them approved, developers MUST have a ProofOfDeveloper NFT in their wallet.</p>
                         <div className={styles.mindnft__imagecontainer}>
-                            <Image width={296} height={296} src="/image.png" alt="" />
+                            <Image width={296} height={296} src="/image-rounded-full.png" alt="" />
+                            <Image width={67} height={67} src="/adorno-2.png" alt="" className={styles.mindnft__imagecontainer__secondcircle} />
                         </div>
                     </div>
                     <div className={styles.mindnft__price}>
@@ -27,11 +28,10 @@ export default function MindNFT() {
                                 <li><Image width={14} height={14} src="/icons/check-icon.png" alt=""/> <span>Your Own Developer Escrow Contract to Post Bounties</span></li>
                             </ul>
                         </div>
-                        <span className={styles.mindnft__price__button}>Apply & Mint</span>
+                        <span className={styles.mindnft__price__button}>Apply & Mint<Image width={13} height={11} src="/icons/arrow-right.png" alt=""/></span>
                     </div>
                 </div>
-                <img src="adorno-2.png" alt="" className={styles.mindnft__firstcircle} />
-                <img src="adorno-2.png" alt="" className={styles.mindnft__secondcircle} />
+                <Image width={106} height={106} src="/adorno-2.png" alt="" className={styles.mindnft__firstcircle} />
             </div>
         </>
     );

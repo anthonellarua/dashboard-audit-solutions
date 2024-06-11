@@ -93,7 +93,7 @@ export default function DashboardContent() {
                                     <div className={styles.dashboardnocontent__itemlistauditor__space}>
                                         <span>holis</span>
                                     </div>
-                                    <div className={styles.dashboardnocontent__itemlistauditor__space}>
+                                    <div className={styles.dashboardnocontent__itemlistauditor__space}>6
                                         <span>heyy</span>
                                     </div>
                                     <div className={styles.dashboardnocontent__itemlistauditor__spaceright}>
