@@ -5,7 +5,7 @@ import DashboardNoContent from "./dashboard-nocontent/dashboard-nocontent";
 import DashboardContent from "./dashboard-content/dashboard-content";
 import MindNFT from "./mind-nft/mind-nft";
 import MindNFTThanks from "./mind-nft-thanks/mind-nft-thanks";
-import ProfileAuditor1 from "./profile-auditor/profile-auditor-1";
+import ProfileAuditor1 from "./profile-auditor-1/profile-auditor-1";
 
 const inter = Inter({ subsets: ["latin"] });
 

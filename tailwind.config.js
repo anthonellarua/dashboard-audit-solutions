@@ -30,10 +30,12 @@ module.exports = {
         secondary_200_v2: '#FBE8B6',
         secondary_400_v2: '#F9D67B',
         secondary_600_v2: '#FEFAEF',
+        secondary_800_v2: '#F4B718',
 
         light: '#F9A3AA',
 
         neutral_gray_100_v2: '#FFFFFF',
+        neutral_gray_200_v2: '#E1DEDF',
         
         subtext: '#78766F',
         background: {

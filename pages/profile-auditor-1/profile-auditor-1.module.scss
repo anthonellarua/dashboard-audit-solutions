@@ -1,0 +1,96 @@
+.profile{
+    @apply relative flex flex-col items-center justify-center p-10 bg-white;
+    &__back{
+        @apply flex justify-start items-center w-full ;
+        span:nth-child(1){
+            @apply text-xs font-medium;
+        }
+        span:nth-child(3){
+            @apply text-xs font-bold;
+        }
+    }
+    &__container{
+        @apply flex justify-between items-center w-full rounded-3xl px-28 py-14 gap-40 bg-gradient-1;
+    }
+    &__userdata{
+        @apply flex flex-col w-1/4  gap-12 ;
+        &__photo{
+            @apply relative flex flex-col gap-6;
+            p{
+                @apply text-primary_600_v2;
+            }
+        }
+        &__data{
+            @apply flex flex-col gap-4;
+            div{
+                @apply flex flex-col gap-2 text-primary_600_v2;
+                span:nth-child(1){
+                    @apply font-bold text-sm;
+                }
+            }
+        }
+    }
+    &__usercontact{
+        @apply flex flex-col w-3/4 gap-6;
+        &__title{
+            @apply flex flex-col gap-1;
+            h2{
+                @apply text-5xl text-primary_400_v2 font-bold;
+            }
+            span{
+                @apply text-xl text-secondary_800_v2 font-bold;
+            }
+        }
+        &__ranking{
+            @apply flex gap-8 text-primary_600_v2;
+            div{
+                @apply flex flex-col gap-2;
+                span:nth-child(1){
+                    @apply font-bold text-sm;
+                }
+                span:nth-child(2){
+                    @apply font-bold text-4xl;
+                }
+            }
+        }
+        &__buttons{
+            @apply flex gap-2;
+            span:nth-child(1){
+                @apply flex items-center justify-center rounded-full w-fit px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+            }
+            span:nth-child(2), span:nth-child(3){
+                @apply flex items-center justify-center rounded-full w-fit px-6 py-4 gap-4 text-base font-medium cursor-pointer bg-neutral_gray_200_v2;
+            }
+        }
+        &__form{
+            @apply flex flex-col p-8 gap-5 rounded-3xl bg-white;
+            p{
+                @apply text-sm;
+            }
+        }
+        &__inputs{
+            @apply flex flex-col gap-3;
+            div{
+                @apply flex gap-3;
+                input{
+                    @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 w-1/2 rounded-full;
+                }
+            }
+            textarea{
+                @apply border-[1px] border-neutral_gray_200_v2 p-4 rounded-2xl;
+            }
+        }
+        button{
+            @apply w-fit py-3 px-5 rounded-full border-[2px] border-primary_400_v2 font-medium text-sm text-primary_400_v2;
+        }
+    }
+    &__usercircle{
+        @apply absolute top-[-80px] left-[-80px] ;
+    }
+    &__firstcircle{
+        @apply absolute bottom-[-20px] left-80 ;
+    }
+    &__gradientcircle{
+        @apply absolute top-[-120px] right-0 ;
+    }
+}
