@@ -76,8 +76,8 @@ export default function ProfileAuditor2() {
                             <div className={styles.profile__usercontact__slidercontainer}>
                                 <Swiper
                                 navigation={{
-                                    nextEl: `.${styles.customNext}`, // Agrega la clase personalizada para la flecha siguiente
-                                    prevEl: `.${styles.customPrev}`, // Agrega la clase personalizada para la flecha anterior
+                                    nextEl: `.${styles.customNext}`,
+                                    prevEl: `.${styles.customPrev}`,
                                 }}
                                 modules={[Navigation]}
                                 slidesPerView={2}
