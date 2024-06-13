@@ -1,26 +1,20 @@
 import styles from "./profile-auditor-2.module.scss"
 import Image from "next/image";
 
-import React from "react";
+import React, { useState } from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import ReviewModal from "./review-modal";
 
 
 export default function ProfileAuditor2() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    /*
-    useEffect(() => {
-        const swiper = new Swiper('.reviewsSlider', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    }, []);
-
-    */
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+    
     return (
         <>
             <div className={styles.profile}>
@@ -77,7 +71,7 @@ export default function ProfileAuditor2() {
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                                     <p>☆☆☆☆☆</p>
                                 </div>
-                                <button>Write a review</button>
+                                <button onClick={openModal}>Write a review</button>
                             </div>
                             <div className={styles.profile__usercontact__slidercontainer}>
                                 <Swiper
@@ -138,6 +132,7 @@ export default function ProfileAuditor2() {
                 </div>
                 <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                 <Image width={370} height={370} src="/gradient-circle.png" alt="" className={styles.profile__gradientcircle} />
+                <ReviewModal isOpen={isModalOpen} onRequestClose={closeModal} />
             </div>
         </>
     );

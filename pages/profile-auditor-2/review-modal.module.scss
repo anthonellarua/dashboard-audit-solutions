@@ -1,0 +1,33 @@
+.overlay{
+    @apply fixed top-0 right-0 left-0 bottom-0 flex items-center justify-center z-50 bg-black bg-opacity-50;
+    &__modal {
+        @apply relative flex flex-col w-full max-w-xl py-8 px-14 gap-10 rounded-3xl text-primary_600_v2 bg-white;
+        h2{
+            @apply w-full text-center text-4xl font-black;
+        }
+        &__stars {
+            @apply text-4xl;
+        }
+        form{
+            @apply flex flex-col gap-3;
+        }
+    }
+    form>div{
+        @apply flex flex-col gap-1;
+        span:nth-child(1){
+            @apply text-xs;
+        }
+        input{
+            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full;
+        }
+        textarea{
+            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-3xl;
+        }
+    }
+    &__submitbutton {
+        @apply flex items-center justify-center rounded-full w-fit mt-3 px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+    }
+    &__closebutton {
+        @apply absolute right-8;
+    }
+}

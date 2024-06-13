@@ -10,7 +10,7 @@
         }
     }
     &__container{
-        @apply flex justify-between items-center w-full rounded-3xl px-28 py-14 gap-40 bg-gradient-1;
+        @apply flex justify-between items-center w-full rounded-3xl px-28 py-14 gap-20 bg-gradient-1;
     }
     &__userdata{
         @apply flex flex-col w-1/4  gap-12 ;
