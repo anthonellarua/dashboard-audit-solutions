@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <ProfileAuditor2/>
+      <PostBountyNoWallet/>
     </main>
   );
 }
