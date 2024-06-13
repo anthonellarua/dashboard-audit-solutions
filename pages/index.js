@@ -8,13 +8,14 @@ import MindNFTThanks from "./mind-nft-thanks/mind-nft-thanks";
 import ProfileAuditor1 from "./profile-auditor-1/profile-auditor-1";
 import ProfileAuditor2 from "./profile-auditor-2/profile-auditor-2";
 import PostBountyNoWallet from "./postbounty-nowallet/postbounty-nowallet";
+import PostBounty from "./post-bounty/post-bounty";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main>
-      <PostBountyNoWallet/>
+      <PostBounty/>
     </main>
   );
 }
