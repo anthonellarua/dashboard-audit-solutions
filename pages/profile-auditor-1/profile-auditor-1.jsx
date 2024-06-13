@@ -63,9 +63,9 @@ export default function ProfileAuditor1() {
                             </div>
                             <button>Send a message</button>
                         </div>
+                        <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                     </div>
                 </div>
-                <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                 <Image width={370} height={370} src="/gradient-circle.png" alt="" className={styles.profile__gradientcircle} />
             </div>
         </>

@@ -128,9 +128,9 @@ export default function ProfileAuditor2() {
                                 <div className={styles.customPrev}><Image width={24} height={24} src="/icons/chevron-left-24.png" alt=""/></div>
                             </div>
                         </div>
+                        <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                     </div>
                 </div>
-                <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                 <Image width={370} height={370} src="/gradient-circle.png" alt="" className={styles.profile__gradientcircle} />
                 <ReviewModal isOpen={isModalOpen} onRequestClose={closeModal} />
             </div>

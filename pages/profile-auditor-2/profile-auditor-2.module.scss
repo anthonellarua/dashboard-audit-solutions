@@ -1,7 +1,7 @@
 .profile{
     @apply relative flex flex-col items-center justify-center p-10 bg-white;
     &__back{
-        @apply flex justify-start items-center w-full ;
+        @apply flex justify-start items-center w-full max-w-[1350px];
         span:nth-child(1){
             @apply text-xs font-medium;
         }
@@ -10,7 +10,7 @@
         }
     }
     &__container{
-        @apply flex justify-between items-center max-w-[1350px] w-full rounded-3xl px-28 py-14 gap-20 bg-gradient-1;
+        @apply relative flex justify-between items-center max-w-[1350px] w-full rounded-3xl px-28 py-14 gap-20 bg-gradient-1;
     }
     &__userdata{
         @apply flex flex-col w-1/4  gap-12 ;
@@ -113,10 +113,10 @@
         @apply absolute top-[-80px] left-[-80px] ;
     }
     &__firstcircle{
-        @apply absolute bottom-[-20px] left-80 ;
+        @apply absolute bottom-[-60px] left-60 ;
     }
     &__gradientcircle{
-        @apply absolute top-[-120px] right-0 ;
+        @apply absolute top-[-120px] right-[-80px] ;
     }
 }
 
