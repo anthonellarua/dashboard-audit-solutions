@@ -1,7 +1,7 @@
 .overlay{
     @apply fixed top-0 right-0 left-0 bottom-0 flex items-center justify-center z-50 bg-black bg-opacity-50;
     &__modal {
-        @apply relative flex flex-col w-full max-w-xl py-8 px-14 gap-10 rounded-3xl text-primary_600_v2 bg-white;
+        @apply relative overflow-hidden flex flex-col w-full max-w-xl py-8 px-14 gap-10 rounded-3xl text-primary_600_v2 bg-white;
         h2{
             @apply w-full text-center text-4xl font-black;
         }
@@ -29,5 +29,8 @@
     }
     &__closebutton {
         @apply absolute right-8;
+    }
+    &__radialgradient {
+        @apply absolute left-0 top-[-110px];
     }
 }

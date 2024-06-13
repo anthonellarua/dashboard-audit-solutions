@@ -24,6 +24,7 @@ const ReviewModal = ({ isOpen, onRequestClose }) => {
                     <button type="submit" className={styles.overlay__submitbutton}>Post review</button>
                 </form>
                 <button type="button" onClick={onRequestClose} className={styles.overlay__closebutton}><Image width={24} height={24} src="/icons/close-icon.png"/></button>
+                <Image width={140} height={140} src="/adorno-1.png" className={styles.overlay__radialgradient}/>
             </div>
         </div>
     );
