@@ -44,7 +44,7 @@ export default function PostBounty() {
                             </div>
                         </div>
                         <div className={styles.postbountynowallet__tabcontent}>
-                        {isApplied ? (
+                            {isApplied ? (
                                 <div className={styles.postbountynowallet__thankmessage}>
                                     <h3>Thanks you for your 
                                     bounty request!</h3>

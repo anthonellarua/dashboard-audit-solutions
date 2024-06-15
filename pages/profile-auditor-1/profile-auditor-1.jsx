@@ -1,7 +1,14 @@
 import styles from "./profile-auditor-1.module.scss"
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ProfileAuditor1() {
+    const [isSended, setIsSended] = useState(false);
+
+    const handleSend = () => {
+        setIsSended(true);
+    };
+
     return (
         <>
             <div className={styles.profile}>
@@ -53,15 +60,24 @@ export default function ProfileAuditor1() {
                             <span>Social media<Image width={16} height={16} src="/icons/share-icon.png" alt=""/></span>
                         </div>
                         <div className={styles.profile__usercontact__form}>
-                            <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nam consequat nunc vitae libero efficitur, ac ornarrnarrnae purus</p>
-                            <div className={styles.profile__usercontact__inputs}>
-                                <div>
-                                    <input placeholder="Name"/>
-                                    <input placeholder="Email adress"/>
+                            {isSended ? (
+                                <div className={styles.thankmessage}>
+                                    <span>Thanks you for send a message!</span>
                                 </div>
-                                <textarea placeholder="Message"/>
-                            </div>
-                            <button>Send a message</button>
+                            ) : (
+                                <>
+                                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nam consequat nunc vitae libero efficitur, ac ornarrnarrnae purus</p>
+                                    <div className={styles.profile__usercontact__inputs}>
+                                        <div>
+                                            <input placeholder="Name"/>
+                                            <input placeholder="Email adress"/>
+                                        </div>
+                                        <textarea placeholder="Message"/>
+                                    </div>
+                                    <button onClick={handleSend}>Send a message</button>
+                                </>
+                            )}
+                            
                         </div>
                         <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                     </div>
