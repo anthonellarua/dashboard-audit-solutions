@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main>
-      <ProfileAuditor1/>
+      <ProfileAuditor2/>
     </main>
   );
 }

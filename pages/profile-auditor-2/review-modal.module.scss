@@ -1,7 +1,7 @@
 .overlay{
     @apply fixed top-0 right-0 left-0 bottom-0 flex items-center justify-center z-50 bg-black bg-opacity-50;
     &__modal {
-        @apply relative overflow-hidden flex flex-col w-full max-w-xl py-8 px-14 gap-10 rounded-3xl text-primary_600_v2 bg-white;
+        @apply relative overflow-hidden flex flex-col w-full max-w-xl h-[480px] py-8 px-14 gap-10 rounded-3xl text-primary_600_v2 bg-white;
         h2{
             @apply w-full text-center text-4xl font-black;
         }
@@ -32,5 +32,31 @@
     }
     &__radialgradient {
         @apply absolute left-0 top-[-110px];
+    }
+}
+
+.thankmessage{
+    @apply relative flex items-center justify-center h-full;
+    div{
+        @apply flex flex-col items-center justify-center h-full;
+        h3{
+            @apply font-black text-3xl;
+        }
+        span{
+            @apply text-2xl;
+        }
+    }
+    &__closebutton {
+        @apply absolute top-0 right-[-20px];
+    }
+    &__gradientright {
+        @apply absolute top-20 right-[-60px];
+    }
+    &__gradientleft {
+        @apply absolute top-20 left-[-60px] origin-center rotate-180;
+    }
+
+    &__gradientcenter{
+        @apply absolute top-[-160px] right-[110px];
     }
 }
