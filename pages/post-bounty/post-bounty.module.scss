@@ -24,10 +24,16 @@
     &__tabs {
         @apply flex gap-2;
         .activeTab{
-            @apply w-fit py-3 px-5 rounded-full border-[2px] border-primary_400_v2 font-medium text-sm text-primary_400_v2;
+            @apply w-fit py-3 px-5 rounded-full border-[2px] border-primary_400_v2 font-medium text-sm text-primary_400_v2 cursor-pointer;
+        }
+        .activeTab:hover{
+            @apply w-fit py-3 px-5 rounded-full border-[2px] border-tertiary_200_v2 font-medium text-sm text-primary_400_v2 cursor-pointer bg-tertiary_200_v2;
         }
         .noactiveTab{
-            @apply w-fit py-3 px-5 rounded-full border-[2px] border-neutral_gray_400_v2 font-medium text-sm text-neutral_gray_400_v2;
+            @apply w-fit py-3 px-5 rounded-full border-[2px] border-neutral_gray_400_v2 font-medium text-sm text-neutral_gray_400_v2 cursor-pointer;
+        }
+        .noactiveTab:hover{
+            @apply w-fit py-3 px-5 rounded-full border-[2px] border-tertiary_200_v2 font-medium text-sm text-primary_400_v2 cursor-pointer bg-tertiary_200_v2;
         }
     }
 
@@ -35,6 +41,9 @@
         @apply w-full flex flex-col items-center bg-white py-6 px-9 gap-4 rounded-3xl;
         button{
             @apply flex items-center justify-center rounded-full w-fit mt-3 px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+        }
+        button:hover{
+            @apply flex items-center justify-center rounded-full w-fit mt-3 px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-7;
         }
     }
 
@@ -44,17 +53,19 @@
             @apply w-full flex flex-col gap-1;
         }
         span{
-            @apply text-xs;
+            @apply text-xs text-primary_600_v2;
         }
         input{
-            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full;
+            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full text-xs;
         }
-        input::placeholder, input:focus, input:not(:focus){
-            @apply text-xs;
-        }
-
         input[type=date]::-webkit-datetime-edit-text {
             @apply text-neutral_gray_400_v2;
+        }
+        select:focus{
+            @apply appearance-none border-[1px] border-neutral_gray_200_v2 rounded-t-3xl rounded-b-none py-3 px-4 text-xs;
+            option{
+                @apply py-3 px-4 p-5 bg-neutral_gray_200_v2;
+            }
         }
     }
 
@@ -64,23 +75,17 @@
             @apply text-xs;
         }
         input{
-            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full;
-        }
-        input::placeholder, input:focus, input:not(:focus){
-            @apply text-xs;
+            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full text-xs;
         }
     }
 
     &__description{
         @apply w-full flex flex-col gap-1;
         span{
-            @apply text-xs;
+            @apply flex gap-1 items-center text-xs text-primary_600_v2;
         }
         textarea{
-            @apply border-[1px] border-neutral_gray_200_v2 p-4 rounded-2xl;
-        }
-        textarea::placeholder, textarea:focus, textarea:not(:focus){
-            @apply text-xs;
+            @apply border-[1px] border-neutral_gray_200_v2 p-4 rounded-2xl text-xs;
         }
     }
 
@@ -92,7 +97,7 @@
     }
 
     &__thankmessage{
-        @apply relative w-full max-w-60 h-[610px] flex items-center justify-center text-2xl text-center;
+        @apply relative w-full max-w-60 h-[562px] flex items-center justify-center text-2xl text-center;
     }
 
     &__image{
@@ -107,4 +112,3 @@
         @apply absolute left-[-40px] top-20;
     }
 }
-

@@ -61,9 +61,9 @@ export default function ProfileAuditor2() {
                             </div> 
                         </div>
                         <div className={styles.profile__usercontact__buttons}>
-                            <span>Contact me<Image width={16} height={16} src="/icons/chat-icon.png" alt=""/></span>
-                            <span>Reviews<Image width={16} height={16} src="/icons/pencil-icon.png" alt=""/></span>
-                            <span>Social media<Image width={16} height={16} src="/icons/share-icon.png" alt=""/></span>
+                            <span>Contact me<Image width={16} height={16} src="/icons/mail-icon-black.png" alt=""/></span>
+                            <span>Reviews<Image width={16} height={16} src="/icons/star-icon-white.png" alt=""/></span>
+                            <span>Social media<Image width={16} height={16} src="/icons/share-icon-black.png" alt=""/></span>
                         </div>
                         <div className={styles.profile__usercontact__reviews}>
                             <div className={styles.profile__usercontact__qualify}>

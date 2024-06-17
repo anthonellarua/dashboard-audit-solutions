@@ -1,0 +1,22 @@
+.selectContainer {
+    @apply relative w-full text-xs text-neutral_gray_400_v2;
+    &__select {
+        @apply flex w-full items-center justify-between border-[1px] border-neutral_gray_200_v2 py-2 px-4 rounded-full cursor-pointer select-none;
+        flex-direction: row !important;
+    }
+    
+    &__selectOpen{
+        @apply border-[1px] border-neutral_gray_200_v2 rounded-t-3xl rounded-b-none py-2 px-4 text-xs;
+    }
+}
+
+.list {
+    @apply absolute top-full w-full rounded-b-3xl list-none z-50;
+    &__selected {
+        @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 p-5 bg-[#EEE9EB] cursor-pointer;
+    }
+    &__selected:last-child{
+        @apply rounded-b-3xl;
+    }
+}
+

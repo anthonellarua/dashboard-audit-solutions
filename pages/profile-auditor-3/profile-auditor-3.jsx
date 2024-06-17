@@ -1,14 +1,8 @@
-import styles from "./profile-auditor-1.module.scss"
+import styles from "./profile-auditor-3.module.scss"
 import Image from "next/image";
 import { useState } from "react";
 
-export default function ProfileAuditor1() {
-    const [isSended, setIsSended] = useState(false);
-
-    const handleSend = () => {
-        setIsSended(true);
-    };
-
+export default function ProfileAuditor3() {
     return (
         <>
             <div className={styles.profile}>
@@ -55,29 +49,19 @@ export default function ProfileAuditor1() {
                             </div> 
                         </div>
                         <div className={styles.profile__usercontact__buttons}>
-                            <span>Contact me<Image width={16} height={16} src="/icons/mail-icon-white.png" alt=""/></span>
-                            <span>Reviews<Image width={16} height={16} src="/icons/star-icon-black.png" alt=""/></span>
-                            <span>Social media<Image width={16} height={16} src="/icons/share-icon-black.png" alt=""/></span>
+                            <span>Contact me<Image width={16} height={16} src="/icons/mail-icon-black.png" alt=""/></span>
+                            <span>Review<Image width={16} height={16} src="/icons/star-icon-black.png" alt=""/></span>
+                            <span>Social media<Image width={16} height={16} src="/icons/share-icon-white.png" alt=""/></span>
                         </div>
-                        <div className={styles.profile__usercontact__form}>
-                            {isSended ? (
-                                <div className={styles.thankmessage}>
-                                    <span>Thanks you for send a message!</span>
-                                </div>
-                            ) : (
-                                <>
-                                    <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Nam consequat nunc vitae libero efficitur, ac ornarrnarrnae purus</p>
-                                    <div className={styles.profile__usercontact__inputs}>
-                                        <div>
-                                            <input placeholder="Name"/>
-                                            <input placeholder="Email adress"/>
-                                        </div>
-                                        <textarea placeholder="Message"/>
-                                    </div>
-                                    <button onClick={handleSend}>Send a message</button>
-                                </>
-                            )}
-                            
+                        <div className={styles.profile__usercontact__socialmedia}>
+                            <div>
+                                <span>Github:</span>
+                                <span>github.com/0xWeisss0xWsss</span>
+                            </div>
+                            <div>
+                                <span>Twitter</span>
+                                <span>@0xWeisss</span>
+                            </div>
                         </div>
                         <Image width={140} height={140} src="/degrade-type2.png" alt="" className={styles.profile__firstcircle} />
                     </div>

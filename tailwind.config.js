@@ -38,6 +38,7 @@ module.exports = {
         neutral_gray_200_v2: '#E1DEDF',
         neutral_gray_400_v2: '#87787B',
 
+        tertiary_200_v2:'#EC9EAB',
         
         subtext: '#78766F',
         background: {
@@ -68,6 +69,9 @@ module.exports = {
         },
         '.bg-gradient-6': {
           background: 'linear-gradient(272.72deg, #4D101A -22.94%, #811A2C 100%)'
+        },
+        '.bg-gradient-7': {
+          background: 'linear-gradient(164deg, rgba(255,255,255,1) 0%, rgba(226,82,105,1) 49%)'
         },
       })
     })

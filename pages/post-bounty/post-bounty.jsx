@@ -1,6 +1,7 @@
 import styles from "./post-bounty.module.scss"
 import Image from "next/image";
 import { useState } from "react";
+import CustomSelect from "../components/custom-select";
 
 export default function PostBounty() {
     const [activeTab, setActiveTab] = useState(1);
@@ -13,6 +14,14 @@ export default function PostBounty() {
     const handleApplyNow = () => {
         setIsApplied(true);
     };
+
+    //select dropdown
+    const options = [
+        { value: 'option1', label: 'Option 1' },
+        { value: 'option2', label: 'Option 2' },
+        { value: 'option3', label: 'Option 3' },
+    ];
+
 
     return (
         <>
@@ -63,7 +72,7 @@ export default function PostBounty() {
                                             </div>
                                         </div>
                                         <div className={styles.postbountynowallet__description}>
-                                            <span>Description:</span>
+                                            <span>Description: <Image width={9} height={9} src="/icons/information-icon-dark.png"/></span>
                                             <textarea placeholder="Describe your project as well your audit needs" />
                                         </div>
                                         <div className={styles.postbountynowallet__doubleinput}>
@@ -72,7 +81,7 @@ export default function PostBounty() {
                                                 <input placeholder="https://github.com/my-project" />
                                             </div>
                                             <div>
-                                                <span>Website/Documentation:</span>
+                                                <span>Website/Documation:</span>
                                                 <input placeholder="https://hyacinth.com" />
                                             </div>
                                         </div>
@@ -89,11 +98,11 @@ export default function PostBounty() {
                                         <div className={styles.postbountynowallet__doubleinput}>
                                             <div>
                                                 <span>Smart Contract Address:</span>
-                                                <input placeholder="0x043959970x043959970x0439....." />
+                                                <input placeholder="Lorem" />
                                             </div>
                                             <div>
                                                 <span>Language of codebase:</span>
-                                                <input placeholder="Solidity, Vyper, etc." />
+                                                <CustomSelect options={options} placeholder="Select options"/>
                                             </div>
                                         </div>
                                         <div className={styles.postbountynowallet__doubleinput}>
@@ -110,7 +119,7 @@ export default function PostBounty() {
                                             </div>
                                         </div>
                                         <button onClick={handleApplyNow}>
-                                            Apply Now
+                                            Publish now
                                             <Image width={11} height={10} src="/icons/arrow-right.png" />
                                         </button>
                                     </>
@@ -121,7 +130,7 @@ export default function PostBounty() {
                                             <input placeholder="My project" />
                                         </div>
                                         <div className={styles.postbountynowallet__description}>
-                                            <span>Description:</span>
+                                            <span>Description: <Image width={9} height={9} src="/icons/information-icon-light.png"/></span>
                                             <textarea placeholder="Describe your project as well your audit needs" />
                                         </div>
                                         <div className={styles.postbountynowallet__doubleinput}>
@@ -130,7 +139,7 @@ export default function PostBounty() {
                                                 <input placeholder="https://github.com/my-project" />
                                             </div>
                                             <div>
-                                                <span>Website/Documentation:</span>
+                                                <span>Website/Documation:</span>
                                                 <input placeholder="https://hyacinth.com" />
                                             </div>
                                         </div>
@@ -144,15 +153,9 @@ export default function PostBounty() {
                                                 <input placeholder="https://i.imgur.com/wvSyWZL.jpeg" />
                                             </div>
                                         </div>
-                                        <div className={styles.postbountynowallet__doubleinput}>
-                                            <div>
-                                                <span>Smart Contract Address:</span>
-                                                <input placeholder="0x043959970x043959970x0439....." />
-                                            </div>
-                                            <div>
-                                                <span>Language of codebase:</span>
-                                                <input placeholder="Solidity, Vyper, etc." />
-                                            </div>
+                                        <div className={styles.postbountynowallet__project}>
+                                            <span>Language of codebase:</span>
+                                            <CustomSelect options={options} placeholder="Select options"/>
                                         </div>
                                         <div className={styles.postbountynowallet__doubleinput}>
                                             <div>
@@ -168,7 +171,7 @@ export default function PostBounty() {
                                             </div>
                                         </div>
                                         <button onClick={handleApplyNow}>
-                                            Apply Now
+                                            Publish now
                                             <Image width={11} height={10} src="/icons/arrow-right.png" />
                                         </button>
                                     </>

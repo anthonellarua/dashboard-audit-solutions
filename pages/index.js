@@ -9,6 +9,7 @@ import ProfileAuditor1 from "./profile-auditor-1/profile-auditor-1";
 import ProfileAuditor2 from "./profile-auditor-2/profile-auditor-2";
 import PostBountyNoWallet from "./postbounty-nowallet/postbounty-nowallet";
 import PostBounty from "./post-bounty/post-bounty";
+import ProfileAuditor3 from "./profile-auditor-3/profile-auditor-3";
 
 const inter = Inter({ subsets: ["latin"] });
 
