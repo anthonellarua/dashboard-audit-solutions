@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import DashboardNoWallet from "./dashboard-nowallet/dashboard-nowallet";
 import DashboardNoContent from "./dashboard-nocontent/dashboard-nocontent";
 import DashboardContent from "./dashboard-content/dashboard-content";
@@ -10,13 +9,12 @@ import ProfileAuditor2 from "./profile-auditor-2/profile-auditor-2";
 import PostBountyNoWallet from "./postbounty-nowallet/postbounty-nowallet";
 import PostBounty from "./post-bounty/post-bounty";
 import ProfileAuditor3 from "./profile-auditor-3/profile-auditor-3";
-
-const inter = Inter({ subsets: ["latin"] });
+import Retainers from "./retainers/retainers";
 
 export default function Home() {
   return (
     <main>
-      <ProfileAuditor2/>
+      <Retainers/>
     </main>
   );
 }

@@ -27,6 +27,7 @@ module.exports = {
         primary_600_v2: '#4D101A',
         primary_800_v2: '#22050A',
 
+        secondary: '#FBE8EB',
         secondary_200_v2: '#FBE8B6',
         secondary_400_v2: '#F9D67B',
         secondary_600_v2: '#FEFAEF',

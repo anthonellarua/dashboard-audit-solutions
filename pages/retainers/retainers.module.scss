@@ -1,0 +1,15 @@
+.retainers{
+    @apply relative flex flex-col items-center justify-center p-10 overflow-hidden bg-secondary;
+    &__container{
+        @apply relative flex justify-between items-center max-w-[1350px] w-full rounded-3xl px-14 py-10 gap-20 bg-white;
+    }
+    &__title{
+        @apply flex justify-between w-full;
+        h2{
+            @apply w-full text-4xl font-black text-primary_600_v2;
+        }
+        div{
+            @apply flex w-full;
+        }
+    }
+}
