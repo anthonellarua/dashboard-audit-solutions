@@ -18,12 +18,12 @@ export default function Retainers() {
                     <div className={styles.retainers__title}>
                         <h2>Auditor Retainers</h2>
                         <div>
-                            <div>
+                            <div className={styles.retainers__searchinput}>
                                 <input placeholder="Search"/>
-                                <Image width={24} height={24} src="/icons/search-icon.png"/>
+                                <Image width={24} height={24} src="/icons/search-icon.png" className={styles.searchicon}/>
                             </div>
                             <CustomSelect options={options} placeholder="Experience"/>
-                            <CustomSelect options={options} placeholder="Specialty"/>
+                            <CustomSelect options={options} placeholder="Specialty" />
                             <CustomSelect options={options} placeholder="Rates"/>
                         </div>
                     </div>

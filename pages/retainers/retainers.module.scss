@@ -6,10 +6,20 @@
     &__title{
         @apply flex justify-between w-full;
         h2{
-            @apply w-full text-4xl font-black text-primary_600_v2;
+            @apply w-2/5 text-4xl font-black text-primary_600_v2;
         }
         div{
-            @apply flex w-full;
+            
+        }
+    }
+
+    &__searchinput{
+        @apply relative flex w-full;
+        input{
+            @apply w-full border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full text-xs;
+        }
+        .searchicon{
+            @apply absolute right-2 top-1/2 translate-y-[-50%];
         }
     }
 }
