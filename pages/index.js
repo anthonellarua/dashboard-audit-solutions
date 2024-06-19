@@ -11,11 +11,12 @@ import PostBounty from "./post-bounty/post-bounty";
 import ProfileAuditor3 from "./profile-auditor-3/profile-auditor-3";
 import Retainers from "./retainers/retainers";
 import BountyFull from "./bounty-full/bounty-full";
+import ADashboardContent from "./a-dashboard-content/a-dashboard-content";
 
 export default function Home() {
   return (
     <main>
-      <BountyFull/>
+      <ADashboardContent/>
     </main>
   );
 }

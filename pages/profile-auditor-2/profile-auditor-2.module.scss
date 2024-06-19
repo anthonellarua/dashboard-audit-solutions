@@ -81,7 +81,7 @@
             }
         }
         &__slidercontainer{
-            @apply relative flex justify-center items-center w-2/3;
+            @apply relative flex justify-center items-center w-full;
         }
         .reviewsSlider{
             @apply w-11/12;
