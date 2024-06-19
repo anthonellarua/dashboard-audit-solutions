@@ -10,11 +10,12 @@ import PostBountyNoWallet from "./postbounty-nowallet/postbounty-nowallet";
 import PostBounty from "./post-bounty/post-bounty";
 import ProfileAuditor3 from "./profile-auditor-3/profile-auditor-3";
 import Retainers from "./retainers/retainers";
+import BountyFull from "./bounty-full/bounty-full";
 
 export default function Home() {
   return (
     <main>
-      <Retainers/>
+      <BountyFull/>
     </main>
   );
 }
