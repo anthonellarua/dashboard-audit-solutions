@@ -1,0 +1,99 @@
+.adashboardcontent{
+    @apply flex items-center justify-center p-10 overflow-hidden bg-white;
+    &__container{
+        @apply relative flex flex-col max-w-[1350px] w-full rounded-3xl px-14 py-9 gap-5 bg-gradient-1;
+        h2{
+            @apply font-black text-4xl text-primary_600_v2;
+        }
+    }
+
+    &__containerdiv{
+        @apply flex flex-col gap-4;
+    }
+
+    &__avabounties{
+        @apply flex flex-col w-full px-12 py-6 rounded-3xl gap-3 bg-white;
+        h2{
+            @apply font-bold text-xl text-primary_600_v2;
+        }
+    }
+
+    &__slidercontainer{
+        @apply relative flex justify-center items-center w-full;
+    }
+    .slider{
+        @apply w-full;
+        &__slide{
+            @apply flex flex-col py-5 px-6 rounded-3xl gap-3 bg-secondary_200_v2;
+        }
+
+        &__title{
+            @apply flex justify-between items-center;
+            div{
+                @apply flex flex-col;
+                span:nth-child(1){
+                    @apply font-bold text-primary_400_v2;
+                }
+                span:nth-child(2){
+                    @apply flex gap-1 items-center text-primary_600_v2 text-xl;
+                }
+            }
+            button{
+                @apply flex items-center justify-center rounded-full w-fit px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+            }
+        }
+
+        &__data{
+            @apply flex justify-between gap-5;
+            div:nth-child(1){
+                @apply flex flex-col w-2/4;
+            }
+            div:nth-child(2), div:nth-child(3){
+                @apply flex flex-col w-1/4;
+            }
+            div>span:nth-child(1){
+                @apply text-primary_400_v2;
+            }
+            div>span:nth-child(2){
+                @apply font-bold text-primary_600_v2;
+            }
+        }
+    }
+    .customPrev{
+        @apply absolute left-[-36px] top-1/2 translate-y-[-50%] z-50 cursor-pointer;
+    }
+    .customNext{
+        @apply absolute right-[-36px] top-1/2 translate-y-[-50%] z-50 cursor-pointer;
+    }
+
+    &__audits{
+        @apply flex justify-between gap-4;
+        
+    }
+
+    &__audititem{
+        @apply flex flex-col w-full h-64 rounded-3xl gap-3 px-7 py-5 bg-white ;
+        h2{
+            @apply font-bold text-xl text-primary_600_v2;
+        }
+    }
+
+    &__users{
+        @apply flex flex-col gap-3;
+        button{
+            @apply flex w-fit justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-4 py-3 text-sm text-primary_400_v2 font-medium cursor-pointer;
+        }
+    }
+
+    &__useritem{
+        @apply flex justify-between px-4 py-2 gap-3 rounded-3xl text-primary_600_v2 bg-secondary_600_v2 ;
+    }
+
+    &__degrade1{
+        @apply absolute top-20 left-[-44px];
+    }
+
+    &__degrade2{
+        @apply absolute bottom-5 right-[-44px];
+    }
+}
