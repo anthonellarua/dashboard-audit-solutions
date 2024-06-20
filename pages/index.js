@@ -13,11 +13,12 @@ import Retainers from "./retainers/retainers";
 import BountyFull from "./bounty-full/bounty-full";
 import ADashboardContent from "./a-dashboard-content/a-dashboard-content";
 import ADashboardNoContent from "./a-dashboard-nocontent/a-dashboard-nocontent";
+import ADashboardNoWallet from "./a-dashboard-nowallet/a-dashboard-nowallet";
 
 export default function Home() {
   return (
     <main>
-      <ADashboardNoContent/>
+      <ADashboardNoWallet/>
     </main>
   );
 }

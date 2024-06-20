@@ -1,0 +1,20 @@
+.adashboardnowallet{
+    @apply flex items-center justify-center p-10 overflow-hidden bg-white;
+    &__container{
+        @apply relative flex items-center justify-between max-w-[1350px] w-full h-[680px] rounded-3xl p-28 gap-5 bg-gradient-1;
+        div{
+            @apply w-1/2;
+        }
+        h2{
+            @apply w-[400px] font-black text-4xl text-primary_600_v2;
+        }
+    }
+
+    &__degrade1{
+        @apply absolute bottom-[-150px] left-[-100px];
+    }
+
+    &__degrade2{
+        @apply absolute top-40 right-20;
+    }
+}
