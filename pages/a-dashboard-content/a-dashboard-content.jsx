@@ -13,7 +13,7 @@ export default function ADashboardContent() {
             <div className={styles.adashboardcontent}>
                 <div className={styles.adashboardcontent__container}>
                     <h2>Auditor Dashboard</h2>
-                    <div>  
+                    <div className={styles.adashboardcontent__containerdiv}>  
                         <div className={styles.adashboardcontent__avabounties}>
                             <h2>Available Bounties</h2>
                             <div className={styles.adashboardcontent__slidercontainer}>
@@ -50,7 +50,27 @@ export default function ADashboardContent() {
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide className={styles.slider__slide}>
-                                        slide 2
+                                        <div className={styles.slider__title}>
+                                            <div>
+                                                <span>Start in X days</span>
+                                                <span><Image width={24} height={24} src="/icons/user-person-icon.png" alt=""/>Project name</span>
+                                            </div>
+                                            <button>More details</button>
+                                        </div>
+                                        <div className={styles.slider__data}>
+                                            <div>
+                                                <span>Date</span>
+                                                <span>11 may 3:00 PM - 02 july 3:00 PM</span>
+                                            </div>
+                                            <div>
+                                                <span>Audit level</span>
+                                                <span>Level 1</span>
+                                            </div>
+                                            <div>
+                                                <span>Total Rewards</span>
+                                                <span>30,000 USDC</span>
+                                            </div>
+                                        </div>
                                     </SwiperSlide>
                                     <SwiperSlide className={styles.slider__slide}>
                                         slide 3
@@ -61,6 +81,59 @@ export default function ADashboardContent() {
                                 </Swiper>
                                 <div className={styles.customNext}><Image width={24} height={24} src="/icons/chevron-right-24.png" alt=""/></div>
                                 <div className={styles.customPrev}><Image width={24} height={24} src="/icons/chevron-left-24.png" alt=""/></div>
+                            </div>
+                        </div>
+                        <div className={styles.adashboardcontent__audits}>
+                            <div className={styles.adashboardcontent__audititem}>
+                                <h2>Available Bounties</h2>
+                                <div className={styles.adashboardcontent__users}>
+                                    <div className={styles.adashboardcontent__useritem}>
+                                        <div>
+                                            <Image width={24} height={24} src="/icons/user-person-icon.png" alt=""/>Username
+                                        </div>
+                                        <div>
+                                            Ends in X days
+                                        </div>
+                                        <div className={styles.adashboardcontent__useritem__link}>
+                                            View
+                                        </div>
+                                    </div>
+                                    <button>View more</button>
+                                </div>
+                            </div>
+                            <div className={styles.adashboardcontent__audititem}>
+                                <h2>Completed audits</h2>
+                                <div className={styles.adashboardcontent__users}>
+                                    <div className={styles.adashboardcontent__useritem}>
+                                        <div>
+                                            <Image width={24} height={24} src="/icons/user-person-icon.png" alt=""/>Username
+                                        </div>
+                                        <div>
+                                            Ends in X days
+                                        </div>
+                                        <div className={styles.adashboardcontent__useritem__link}>
+                                            View
+                                        </div>
+                                    </div>
+                                    <button>View more</button>
+                                </div>
+                            </div>
+                            <div className={styles.adashboardcontent__audititem}>
+                                <h2>Requested audits</h2>
+                                <div className={styles.adashboardcontent__users}>
+                                    <div className={styles.adashboardcontent__useritem}>
+                                        <div>
+                                            <Image width={24} height={24} src="/icons/user-person-icon.png" alt=""/>Username
+                                        </div>
+                                        <div>
+                                            Ends in X days
+                                        </div>
+                                        <div className={styles.adashboardcontent__useritem__link}>
+                                            View
+                                        </div>
+                                    </div>
+                                    <button>View more</button>
+                                </div>
                             </div>
                         </div>
                     </div>

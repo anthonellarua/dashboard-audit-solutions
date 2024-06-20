@@ -7,6 +7,10 @@
         }
     }
 
+    &__containerdiv{
+        @apply flex flex-col gap-4;
+    }
+
     &__avabounties{
         @apply flex flex-col w-full px-12 py-6 rounded-3xl gap-3 bg-white;
         h2{
@@ -60,5 +64,34 @@
     }
     .customNext{
         @apply absolute right-[-36px] top-1/2 translate-y-[-50%] z-50 cursor-pointer;
+    }
+
+    &__audits{
+        @apply flex justify-between gap-4;
+        
+    }
+
+    &__audititem{
+        @apply flex flex-col w-full rounded-3xl gap-3 px-7 py-5 bg-white ;
+        h2{
+            @apply font-bold text-xl text-primary_600_v2;
+        }
+    }
+
+    &__users{
+        @apply flex flex-col gap-3;
+        button{
+            @apply flex w-fit justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-4 py-3 text-sm text-primary_400_v2 font-medium cursor-pointer;
+        }
+    }
+
+    &__useritem{
+        @apply flex justify-between px-4 py-2 gap-3 rounded-3xl bg-secondary_600_v2;
+        div{
+            @apply flex gap-2 text-center text-primary_600_v2;
+        }
+        &__link{
+            @apply font-medium underline;
+        }
     }
 }
