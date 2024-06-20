@@ -94,4 +94,12 @@
             @apply font-medium underline;
         }
     }
+
+    &__degrade1{
+        @apply absolute top-20 left-[-44px];
+    }
+
+    &__degrade2{
+        @apply absolute bottom-5 right-[-44px];
+    }
 }

@@ -137,6 +137,8 @@ export default function ADashboardContent() {
                             </div>
                         </div>
                     </div>
+                    <Image width={88} height={88} src="/adorno-2.png" alt="" className={styles.adashboardcontent__degrade1}/>
+                <Image width={88} height={88} src="/adorno-2.png" alt="" className={styles.adashboardcontent__degrade2}/>
                 </div>
             </div>
         </>
