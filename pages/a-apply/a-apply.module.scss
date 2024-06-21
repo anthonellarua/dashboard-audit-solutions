@@ -1,0 +1,87 @@
+.aapply{
+    @apply flex items-center justify-center p-10 overflow-hidden bg-white;
+    &__container{
+        @apply relative flex items-center justify-center w-full h-[680px] rounded-3xl bg-gradient-1;
+    }
+
+    &__background{
+        @apply flex items-center justify-between max-w-[1350px] w-full px-28 gap-5;
+        h2{
+            @apply w-[400px] font-black text-4xl text-primary_600_v2;
+        }
+    }
+
+    &__info{
+        @apply flex flex-col w-1/2 gap-10;
+        div{
+            @apply flex flex-col w-[442px] gap-3;
+        }
+        &__image{
+            @apply relative;
+        }
+    }
+
+    &__form{
+        @apply flex flex-col items-center justify-center w-1/2 min-h-[564px] px-9 py-6 gap-6 rounded-3xl bg-white;
+        &__container{
+            @apply flex flex-col w-full gap-4;
+        }
+        button{
+            @apply flex items-center justify-center rounded-full w-fit px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+        }
+    }
+
+    &__doubleinput{
+        @apply w-full flex gap-3;
+        div{
+            @apply w-full flex flex-col gap-1;
+        }
+        span{
+            @apply text-xs text-primary_600_v2;
+        }
+        input{
+            @apply border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full text-xs;
+        }
+        select:focus{
+            @apply appearance-none border-[1px] border-neutral_gray_200_v2 rounded-t-3xl rounded-b-none py-3 px-4 text-xs;
+            option{
+                @apply py-3 px-4 p-5 bg-neutral_gray_200_v2;
+            }
+        }
+    }
+
+    &__completeinput{
+        @apply w-full flex flex-col gap-1;
+        span{
+            @apply text-xs text-primary_600_v2;
+        }
+        input{
+            @apply w-full border-[1px] border-neutral_gray_200_v2 py-3 px-4 rounded-full text-xs;
+        }
+        select:focus{
+            @apply appearance-none border-[1px] border-neutral_gray_200_v2 rounded-t-3xl rounded-b-none py-3 px-4 text-xs;
+            option{
+                @apply py-3 px-4 p-5 bg-neutral_gray_200_v2;
+            }
+        }
+    }
+
+    &__thankmessage{
+        @apply flex flex-col gap-3 justify-center items-center;
+        h2{
+            @apply font-bold text-2xl text-center;
+        }
+    }
+
+    &__degrade1{
+        @apply absolute top-10 left-[-50px];
+    }
+
+    &__degrade2{
+        @apply absolute bottom-4 right-36;
+    }
+
+    &__gradientcircle{
+        @apply absolute bottom-[-180px] right-[-180px];
+    }
+}

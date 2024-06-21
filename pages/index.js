@@ -14,11 +14,12 @@ import BountyFull from "./bounty-full/bounty-full";
 import ADashboardContent from "./a-dashboard-content/a-dashboard-content";
 import ADashboardNoContent from "./a-dashboard-nocontent/a-dashboard-nocontent";
 import ADashboardNoWallet from "./a-dashboard-nowallet/a-dashboard-nowallet";
+import AApply from "./a-apply/a-apply";
 
 export default function Home() {
   return (
     <main>
-      <ADashboardNoWallet/>
+      <AApply/>
     </main>
   );
 }

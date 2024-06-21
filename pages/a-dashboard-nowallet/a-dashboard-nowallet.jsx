@@ -1,12 +1,6 @@
 import styles from "./a-dashboard-nowallet.module.scss"
 import Image from "next/image";
 
-import React, { useState } from "react";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-
 export default function ADashboardNoWallet() {
     return (
         <>
