@@ -16,11 +16,12 @@ import ADashboardNoContent from "./a-dashboard-nocontent/a-dashboard-nocontent";
 import ADashboardNoWallet from "./a-dashboard-nowallet/a-dashboard-nowallet";
 import AApply from "./a-apply/a-apply";
 import MyProfileProtocols from "./myprofile-protocols/myprofile-protocols";
+import MyProfileAuditor from "./myprofile-auditor/myprofile-auditor";
 
 export default function Home() {
   return (
     <main>
-      <MyProfileProtocols/>
+      <MyProfileAuditor/>
     </main>
   );
 }

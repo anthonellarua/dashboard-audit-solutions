@@ -1,0 +1,145 @@
+.profile{
+    @apply relative flex flex-col items-center justify-center overflow-hidden bg-secondary_600_v2;
+    &__container{
+        @apply flex justify-between max-w-[1250px] w-full py-14 gap-20;
+    }
+    &__userdata{
+        @apply flex flex-col w-1/4 gap-6 ;
+        &__photo{
+            @apply relative flex flex-col gap-6;
+        }
+        &__data{
+            @apply flex flex-col gap-4;
+            div{
+                @apply flex flex-col gap-2;
+                span:nth-child(1){
+                    @apply flex gap-2 items-center font-bold;
+                }
+            }
+        }
+        &__aboutmetext{
+            @apply text-sm;
+        }
+    }
+    &__usercontact{
+        @apply z-10 flex flex-col w-3/4 gap-6;
+        &__slidercontainer{
+            @apply relative flex justify-center items-center w-full;
+        }
+        .reviewsSlider{
+            @apply w-[99%];
+            &__slide{
+                @apply flex flex-col py-5 px-6 rounded-3xl gap-3 bg-secondary_600_v2;
+            }
+            &__userdata{
+                @apply flex justify-between;
+                div{
+                    @apply flex gap-2 items-center ;
+                }
+                span{
+                    @apply text-primary_600_v2 ;
+                }
+            }
+            &__stars{
+                @apply flex items-center;
+            }
+            p{
+                @apply text-xs text-primary_600_v2;
+            }
+            
+        }
+        .customPrev{
+            @apply absolute left-[-25px] top-1/2 translate-y-[-50%] z-50 font-bold text-4xl text-primary_400_v2 cursor-pointer;
+        }
+        .customNext{
+            @apply absolute right-[-25px] top-1/2 translate-y-[-50%] z-50 font-bold text-4xl text-primary_400_v2 cursor-pointer;
+        }
+
+        &__title{
+            @apply flex flex-col gap-1;
+            h2{
+                @apply text-5xl text-primary_400_v2 font-bold;
+            }
+        }
+        &__ranking{
+            @apply flex gap-8 mb-8 text-primary_600_v2;
+            div{
+                @apply flex flex-col gap-2;
+                span:nth-child(1){
+                    @apply font-bold text-sm;
+                }
+                span:nth-child(2){
+                    @apply  flex items-center gap-4 font-bold text-4xl;
+                    div{
+                        @apply  flex items-center;
+                    }
+                }
+            }
+        }
+        &__buttons{
+            @apply flex gap-2;
+            .activeTab{
+                @apply flex items-center justify-center rounded-full w-fit px-6 py-4 gap-4 text-white text-base font-medium cursor-pointer bg-gradient-6;
+            }
+            .noactiveTab{
+                @apply flex items-center justify-center rounded-full w-fit px-6 py-4 gap-4 text-base font-medium cursor-pointer bg-neutral_gray_200_v2;
+            }
+        }
+        &__container{
+            @apply flex flex-col w-[896px] p-8 gap-5 rounded-3xl bg-white ;
+        }
+    }
+    &__formcontainer{
+        @apply flex flex-col gap-5 w-full items-start ;
+        &__inputs{
+            @apply flex w-full gap-3 text-xs;
+        }
+        &__notifications{
+            @apply flex flex-col gap-5 text-xs;
+            h2{
+                @apply font-bold;
+            }
+        }
+        .checkboxes{
+            @apply flex flex-col gap-3;
+            &__input{
+                @apply flex items-center gap-2;
+            }
+            input:not(:checked){
+                @apply appearance-none w-3 h-3 bg-[#D9D9D9];
+            }
+        }
+        button{
+            @apply px-5 py-4 font-bold text-sm;
+        }
+    }
+
+    &__social{
+        @apply flex flex-col gap-5 w-full items-start ;
+        &__inputs{
+            @apply flex flex-col w-full gap-3 text-xs;
+        }
+        button{
+            @apply px-5 py-4 font-bold text-sm;
+        }
+    }
+
+    .inputitem{
+        @apply flex flex-col w-1/2 gap-2;
+        span{
+            @apply font-bold;
+        }
+        input{
+            @apply border-[1px] border-neutral_gray_600_v2 p-4 rounded-full;
+        }
+    }
+    &__useredit{
+        @apply absolute top-10 right-10 z-10 p-1 rounded-full bg-white;
+    }
+    &__degradephoto{
+        @apply absolute bottom-[-20px] right-3;
+    }
+    &__gradientcircle{
+        @apply absolute bottom-[-120px] right-[-80px] ;
+    }
+}
