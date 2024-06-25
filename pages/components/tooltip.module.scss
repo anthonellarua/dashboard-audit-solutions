@@ -1,0 +1,17 @@
+.tooltip {
+    @apply relative inline-block cursor-pointer;
+
+    .tooltiptext {
+        @apply absolute left-[50%] bottom-[200%] z-10 w-36 ml-[-70px] py-2 px-3 rounded invisible text-center text-[8px] text-primary_800_v2 bg-neutral_gray_200_v2;
+    }
+
+    .tooltiptext::after{
+        @apply absolute top-full left-[50%] ml-[-5px] border-4 border-t-neutral_gray_200_v2 border-r-transparent border-l-transparent border-b-transparent;
+        content: "";
+    }
+
+}
+
+.tooltip:hover .tooltiptext {
+    @apply visible opacity-100;
+}

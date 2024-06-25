@@ -1,12 +1,20 @@
 import styles from "./a-apply.module.scss"
 import Image from "next/image";
 import { useState } from "react";
+import Tooltip from "../components/tooltip";
+import CustomSelect from "../components/custom-select";
 
 export default function AApply() {
     const [isApplied, setIsApplied] = useState(false);
     const handleApplyNow = () => {
         setIsApplied(true);
     };
+
+    //select dropdown
+    const options = [
+        { value: 'option1', label: 'Option 1' },
+        { value: 'option2', label: 'Option 2' },
+    ];
 
     return (
         <>
@@ -35,41 +43,72 @@ export default function AApply() {
                                         <div className={styles.aapply__doubleinput}>
                                             <div>
                                                 <span>Wallet address:</span>
-                                                <input />
+                                                <input placeholder="walletaddress" />
                                             </div>
                                             <div>
-                                                <span>Choose a username</span>
-                                                <input />
+                                                <span>Choose a username
+                                                    <Tooltip text="This will be public, the username chosen may not be available and will be changed if so">
+                                                        <Image width={9} height={9} src="/icons/information-icon-light.png" />
+                                                    </Tooltip>
+                                                </span>
+                                                <input placeholder="@username"/>
                                             </div>
                                         </div>
                                         <div className={styles.aapply__completeinput}>
-                                            <span>Choose a username</span>
-                                            <input placeholder="Separate by comma"/>
+                                            <span>Which chains do you want to audit on?</span>
+                                            <input placeholder="Ethereum, BCS,..."/>
                                         </div>
                                         <div className={styles.aapply__doubleinput}>
                                             <div>
                                                 <span>What is your Calendly link?</span>
-                                                <input placeholder="https://github.com/my-project"/>
+                                                <input placeholder="https://calendly.com/user"/>
                                             </div>
                                             <div>
                                                 <span>LinkedIn</span>
-                                                <input placeholder="https://hyacinth.com"/>
+                                                <input placeholder="https://linkedin.com/user"/>
+                                            </div>
+                                        </div>
+                                        
+                                        <div className={styles.aapply__completeinput}>
+                                            <span>Previous development history:</span>
+                                            <input placeholder="Link to CV, Github, Previous project..."/>
+                                        </div>
+                                        <div className={styles.aapply__doubleinput}>
+                                            <div>
+                                                <span>Years of experience:</span>
+                                                <input placeholder="0" />
+                                            </div>
+                                            <div>
+                                                <span>Speciality:</span>
+                                                <CustomSelect options={options} placeholder="Select options"/>
+                                            </div>
+                                        </div>
+                                        <div className={styles.aapply__doubleinput}>
+                                            <div>
+                                                <span>Cost rate:</span>
+                                                <CustomSelect options={options} placeholder="Select options"/>
+                                            </div>
+                                            <div>
+                                                <span>How long to finish a project?</span>
+                                                <input placeholder="1 Month, 2 weekly, etc" />
+                                            </div>
+                                        </div>
+                                        <div className={styles.aapply__doubleinput}>
+                                            <div>
+                                                <span>How often is the payment made?</span>
+                                                <input placeholder="One a week, One a month, etc" />
+                                            </div>
+                                            <div>
+                                                <span>Previous audit:</span>
+                                                <input placeholder="Link to audits reports" />
                                             </div>
                                         </div>
                                         <div className={styles.aapply__completeinput}>
-                                            <span>Previous development history (CV, Projects, etc.).</span>
-                                            <input/>
-                                        </div>
-                                        <div className={styles.aapply__completeinput}>
-                                            <span>Previous audit history Make a new line for each entry.</span>
-                                            <input />
-                                        </div>
-                                        <div className={styles.aapply__completeinput}>
-                                            <span>Choose a username</span>
-                                            <input/>
+                                            <span>Here is a smart contract. There are errors in it. Find as many as you can and detail the errors below.</span>
+                                            <input placeholder="Quiz report"/>
                                         </div>
                                     </div>
-                                    <button onClick={handleApplyNow}>Publish now<Image width={16} height={16} src="/icons/arrow-right.png" alt=""/></button>
+                                    <button onClick={handleApplyNow}>Apply<Image width={16} height={16} src="/icons/arrow-right.png" alt=""/></button>
                                 </>
                             )}
                         </div>

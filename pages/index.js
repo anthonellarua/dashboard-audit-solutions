@@ -21,7 +21,7 @@ import MyProfileAuditor from "./myprofile-auditor/myprofile-auditor";
 export default function Home() {
   return (
     <main>
-      <MyProfileAuditor/>
+      <AApply/>
     </main>
   );
 }
