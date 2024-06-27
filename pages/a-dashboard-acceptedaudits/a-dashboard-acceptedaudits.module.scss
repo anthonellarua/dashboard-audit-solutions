@@ -1,0 +1,48 @@
+.adashboard{
+    @apply flex flex-col items-center justify-center gap-6 p-10 overflow-hidden bg-secondary;
+    &__back{
+        @apply flex justify-start items-center w-full max-w-[1350px] ;
+        span:nth-child(1){
+            @apply text-xs font-medium;
+        }
+        span:nth-child(3){
+            @apply text-xs font-bold;
+        }
+    }
+
+    &__container{
+        @apply relative flex flex-col max-w-[1350px] w-full px-20 py-10 gap-6 rounded-3xl bg-white;
+        h2{
+            @apply font-black text-4xl text-primary_600_v2;
+        }
+        >div{
+            @apply flex flex-col gap-3;
+        }
+    }
+
+    &__item{
+        @apply flex items-center justify-between px-10 py-2 rounded-3xl bg-secondary_600_v2;
+        &__name{
+            @apply flex items-center w-1/3 gap-2;
+        }
+
+        &__ended{
+            @apply w-1/3;
+        }
+
+        &__view{
+            @apply w-fit;
+            span{
+                @apply flex w-fit justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-4 py-3 text-sm text-primary_400_v2 font-medium cursor-pointer;
+            }
+        }
+    }
+
+    &__degrade1{
+        @apply absolute top-10 right-[-60px];
+    }
+
+    &__degrade2{
+        @apply absolute bottom-10 left-[-60px];
+    }
+}

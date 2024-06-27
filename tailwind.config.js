@@ -37,6 +37,7 @@ module.exports = {
 
         neutral_gray_100_v2: '#FFFFFF',
         neutral_gray_200_v2: '#E1DEDF',
+        neutral_gray_300_v2: '#B4AAAC',
         neutral_gray_400_v2: '#87787B',
         neutral_gray_600_v2: '#4C4244',
 

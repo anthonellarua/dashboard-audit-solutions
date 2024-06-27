@@ -17,11 +17,14 @@ import ADashboardNoWallet from "./a-dashboard-nowallet/a-dashboard-nowallet";
 import AApply from "./a-apply/a-apply";
 import MyProfileProtocols from "./myprofile-protocols/myprofile-protocols";
 import MyProfileAuditor from "./myprofile-auditor/myprofile-auditor";
+import ABounties from "./a-bounties/a-bounties";
+import ChatProtocols from "./chat-protocols/chat-protocols";
+import ADashboardAcceptedAudits from "./a-dashboard-acceptedaudits/a-dashboard-acceptedaudits";
 
 export default function Home() {
   return (
     <main>
-      <AApply/>
+      <ADashboardAcceptedAudits/>
     </main>
   );
 }

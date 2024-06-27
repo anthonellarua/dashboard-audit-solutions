@@ -1,0 +1,44 @@
+.profile{
+    @apply relative flex flex-col items-center justify-center overflow-hidden bg-secondary_600_v2;
+    &__container{
+        @apply flex justify-between max-w-[1250px] w-full py-14 gap-3;
+    }
+
+    &__chats{
+        @apply flex flex-col w-1/4 gap-5 rounded-3xl px-5 py-10 bg-white;
+        h2{
+            @apply font-bold text-2xl text-primary_800_v2;
+        }
+    }
+
+    &__inputsearch{
+        @apply relative;
+        input{
+            @apply w-full px-4 py-2 rounded-full border-[1px] border-neutral_gray_300_v2;
+        }
+        &__search{
+            @apply absolute right-2 top-1/2 translate-y-[-50%];
+        }
+    }
+
+    &__conversation{
+        @apply max-w-[974px] w-3/4;
+    }
+
+    &__useredit{
+        @apply absolute top-10 right-10 z-10 p-1 rounded-full bg-white;
+    }
+    &__gradientcircle{
+        @apply absolute bottom-[-120px] right-[-80px] ;
+    }
+}
+
+.chat{
+    @apply flex flex-col gap-3;
+    &__item{
+        @apply flex items-center p-3 gap-3 rounded-3xl text-primary_600_v2 font-bold bg-[#FEF9ED];
+        &__active{
+            @apply flex items-center p-3 gap-3 rounded-3xl text-primary_600_v2 font-bold bg-secondary_200_v2;
+        }
+    }
+}

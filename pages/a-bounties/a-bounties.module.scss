@@ -1,0 +1,6 @@
+.abounties{
+    @apply relative flex flex-col items-center justify-center overflow-hidden bg-secondary;
+    &__container{
+        @apply flex justify-between max-w-[1250px] w-full py-14 gap-20;
+    }
+}
