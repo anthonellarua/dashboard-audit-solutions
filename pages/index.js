@@ -26,7 +26,7 @@ import ADashboardRequestedAudits from "./a-dashboard-requestedaudits/a-dashboard
 export default function Home() {
   return (
     <main>
-      <ADashboardRequestedAudits/>
+      <ChatProtocols/>
     </main>
   );
 }

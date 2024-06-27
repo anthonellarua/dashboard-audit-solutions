@@ -22,7 +22,40 @@
     }
 
     &__conversation{
-        @apply max-w-[974px] w-3/4;
+        @apply max-w-[974px] w-3/4 overflow-hidden border-[1px] border-secondary_200_v2 rounded-3xl;
+    }
+
+    &__user{
+        @apply flex gap-3 py-9 px-6 bg-white;
+        div{
+            @apply flex flex-col;
+        }
+        span:nth-child(1){
+            @apply font-bold;
+        }
+        span:nth-child(2){
+            @apply text-xs;
+        }
+    }
+
+    &__messages{
+        @apply flex h-[567px] items-end px-5 py-7 bg-neutral_gray_200_v2;
+        &__message{
+            @apply flex items-end gap-2;
+            p{
+                @apply w-[340px] p-5 rounded-3xl text-xs bg-white;
+            }
+        }
+    }
+
+    &__inputsend{
+        @apply relative py-6 px-5 bg-white;
+        input{
+            @apply w-full py-4 px-6 rounded-full border-[1px] border-neutral_gray_600_v2 text-xs;
+        }
+        &__sendicon{
+            @apply absolute right-10 top-1/2 translate-y-[-50%];
+        }
     }
 
     &__useredit{
