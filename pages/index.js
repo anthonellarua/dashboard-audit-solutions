@@ -20,11 +20,13 @@ import MyProfileAuditor from "./myprofile-auditor/myprofile-auditor";
 import ABounties from "./a-bounties/a-bounties";
 import ChatProtocols from "./chat-protocols/chat-protocols";
 import ADashboardAcceptedAudits from "./a-dashboard-acceptedaudits/a-dashboard-acceptedaudits";
+import ADashboardCompleteAudits from "./a-dashboard-completedaudits/a-dashboard-completedaudits";
+import ADashboardRequestedAudits from "./a-dashboard-requestedaudits/a-dashboard-requestedaudits";
 
 export default function Home() {
   return (
     <main>
-      <ADashboardAcceptedAudits/>
+      <ADashboardRequestedAudits/>
     </main>
   );
 }
