@@ -23,11 +23,12 @@ import ADashboardAcceptedAudits from "./a-dashboard-acceptedaudits/a-dashboard-a
 import ADashboardCompleteAudits from "./a-dashboard-completedaudits/a-dashboard-completedaudits";
 import ADashboardRequestedAudits from "./a-dashboard-requestedaudits/a-dashboard-requestedaudits";
 import ABountyFull from "./a-bounty-full/a-bounty-full";
+import MyProfileProtocolsEdit from "./my-profile-protocols/my-profile-protocols";
 
 export default function Home() {
   return (
     <main>
-      <ABountyFull/>
+      <MyProfileProtocolsEdit/>
     </main>
   );
 }
