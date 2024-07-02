@@ -1,0 +1,54 @@
+.aleaderboards{
+    @apply flex flex-col items-center justify-center p-10 overflow-hidden bg-secondary;
+    &__container{
+        @apply relative max-w-[1350px] w-full z-10;
+    }
+    &__containerinfo{
+        @apply relative flex flex-col w-full z-10 rounded-3xl px-14 py-10 gap-10 bg-white;
+    }
+    &__title{
+        @apply w-2/5 text-4xl font-black text-primary_600_v2;
+    }
+    
+    &__table{
+        @apply flex flex-col w-full gap-6;
+    }
+
+    &__header{
+        @apply flex justify-between w-full font-bold text-sm text-primary_600_v2;
+    }
+
+    &__headerdiv{
+        @apply flex items-center justify-center text-center w-full gap-1 text-primary_400_v2;
+    }
+
+    &__bigdiv{
+        @apply flex items-center justify-center min-w-[216px] w-full gap-1 text-center text-primary_400_v2;
+    }
+
+    &__content{
+        @apply flex flex-col gap-3;
+    }
+
+    &__row{
+        @apply flex justify-between w-full p-4 pl-0 rounded-full bg-secondary_600_v2 text-sm;
+        &__viewprofile{
+            @apply flex justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-3 py-3 text-sm text-primary_400_v2 font-medium cursor-pointer;
+        }
+        &__user{
+            @apply min-w-[216px] text-primary_600_v2;
+        }
+        &__contentdiv{
+            @apply flex items-center justify-center w-full gap-2 text-center;
+        }
+        &__contentbigdiv{
+            @apply flex items-center justify-center w-full gap-2 min-w-[216px] text-center;
+        }
+        &__username{
+            @apply text-base text-primary_600_v2 font-medium;
+        }
+    }
+    &__degrade{
+        @apply absolute bottom-[-200px] right-[-200px];
+    }
+}
