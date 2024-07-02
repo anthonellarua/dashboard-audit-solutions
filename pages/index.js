@@ -25,11 +25,12 @@ import ADashboardRequestedAudits from "./a-dashboard-requestedaudits/a-dashboard
 import ABountyFull from "./a-bounty-full/a-bounty-full";
 import MyProfileProtocolsEdit from "./my-profile-protocols/my-profile-protocols";
 import ALeaderboards from "./a-leaderboards/a-leaderboards";
+import MostRecentBounties from "./most-recent-bounties/most-recent-bounties";
 
 export default function Home() {
   return (
     <main>
-      <ALeaderboards/>
+      <MostRecentBounties/>
     </main>
   );
 }
