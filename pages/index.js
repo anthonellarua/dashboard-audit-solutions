@@ -30,7 +30,7 @@ import MostRecentBounties from "./most-recent-bounties/most-recent-bounties";
 export default function Home() {
   return (
     <main>
-      <MostRecentBounties/>
+      <ProfileAuditor1/>
     </main>
   );
 }

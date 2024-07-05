@@ -1,23 +1,44 @@
 .dashboardnocontent{
-    @apply relative flex items-center justify-center h-screen p-10 bg-white;
-    &__container{
-        @apply flex flex-col justify-between items-center h-full w-full rounded-3xl px-28 py-14 gap-9 bg-gradient-1;
+    @apply relative flex items-center justify-center h-screen p-10 bg-red-100;
+
+    @screen lg {
+        @apply  bg-white;
     }
-    &__titlesection{
-        @apply flex justify-between items-center w-full;
-        p{
-            @apply text-4xl text-primary_600_v2 font-semibold;
+
+    &__container {
+        @apply flex flex-col justify-between items-center h-full w-full rounded-3xl  py-10 gap-6;
+
+        @screen lg {
+            @apply px-28 py-14  gap-9 bg-gradient-1;
         }
+    }
+    &__titlesection {
+        @apply flex flex-col w-full gap-4;
+        
+        @screen lg {
+            @apply flex-row justify-between;
+        }
+
+        p{
+            @apply text-4xl w-1/2 text-primary_600_v2 font-semibold;
+        }
+
         div{
-            @apply flex justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-5 py-3 text-primary_400_v2 font-medium cursor-pointer;
+            @apply flex justify-between w-fit items-center gap-2 border-2 border-primary_400_v2 rounded-full px-5 py-3 text-primary_400_v2 font-medium cursor-pointer;
         }
     }
     &__contentsection{
-        @apply flex justify-between items-center w-full h-full gap-4;
+        @apply flex flex-col justify-between items-center w-full h-full gap-4;
+        @screen lg {
+            @apply flex-row justify-between;
+        }
         
     }
     &__side{
-        @apply flex flex-col w-1/2 h-full rounded-3xl p-8 gap-6 bg-white;
+        @apply flex flex-col w-full h-full rounded-3xl p-8 gap-6 bg-white;
+        @screen lg {
+            @apply w-1/2;
+        }
         p{
             @apply text-xl font-bold text-primary_600_v2;
         }
@@ -26,9 +47,16 @@
         }
     }
     &__firstcircle{
-        @apply absolute top-44 left-[-36px];
+        @apply absolute top-20 right-[-0px];
+        @screen lg {
+            @apply left-[-0px];
+        }
     }
-    &__secondcircle{
-        @apply absolute bottom-20 right-0;
+    &__secondcircle {
+        @apply absolute bottom-20 right-0 hidden;
+
+        @screen sm {
+            @apply block;
+        }
     }
 }
