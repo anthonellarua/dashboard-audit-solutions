@@ -1,27 +1,49 @@
 .mindnft{
-    @apply relative flex items-center justify-center h-screen h-screen p-10 bg-white;
+    @apply relative flex items-center justify-center h-screen p-10 bg-red-100;
+
+    @screen lg {
+        @apply  bg-white;
+    }
     &__container{
-        @apply flex justify-between items-center h-[600px] w-full rounded-3xl px-28 py-14 bg-gradient-1;
+        @apply flex flex-col justify-between items-center h-full w-full rounded-3xl;
+        @screen lg {
+            @apply flex-row px-28 py-14 h-[600px] gap-9 bg-gradient-1;
+        }
     }
     &__protocol{
-        @apply flex flex-col w-2/4 gap-3;
+        @apply flex flex-col w-full gap-3;
+        @screen lg {
+            @apply w-2/4;
+        }
         h2{
             @apply text-primary_600_v2 font-black text-4xl;
         }
         p{
-            @apply text-primary_600_v2 w-9/12;
+            @apply text-primary_600_v2 w-full;
+            @screen lg {
+                @apply w-9/12;
+            }
         }
     }
     &__imagecontainer{
-        @apply relative mt-10 w-fit;
+        @apply relative mt-10 w-fit hidden;
+        @screen lg {
+            @apply block;
+        }
         &__secondcircle{
             @apply absolute bottom-20 right-[-28px];
         }
     }
     &__price{
-        @apply flex flex-col justify-center w-2/4 rounded-3xl py-7 px-8 gap-6 text-primary_600_v2 bg-white;
+        @apply flex flex-col justify-center w-full rounded-3xl py-7 px-8 gap-6 text-primary_600_v2 bg-white;
+        @screen lg {
+            @apply w-2/4
+        }
         &__price{
-            @apply flex flex-col rounded-3xl py-10 px-6 gap-5 bg-secondary_400_v2;
+            @apply flex flex-col rounded-3xl py-6 px-6 gap-5 bg-secondary_400_v2;
+            @screen lg {
+                @apply py-10
+            }
             span{
                 @apply font-bold;
             }
@@ -50,7 +72,10 @@
         }
     }
     &__firstcircle{
-        @apply absolute top-28 left-[-40px] ;
+        @apply absolute top-20 right-[-0px];
+        @screen lg {
+            @apply left-[-0px];
+        }
     }
     &__secondcircle{
         @apply absolute top-28 right-24;

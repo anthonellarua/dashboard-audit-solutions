@@ -8,6 +8,7 @@
         h2{
             @apply lg:w-[400px] font-black lg:text-4xl text-3xl text-primary_600_v2;
         }
+        
     }
 
     &__degrade1{
@@ -17,4 +18,7 @@
     &__degrade2{
         @apply absolute lg:top-40 top-28 lg:right-20 right-0;
     }
+    
+
+
 }

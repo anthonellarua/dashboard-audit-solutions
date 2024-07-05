@@ -1,7 +1,13 @@
 .postbountynowallet{
-    @apply relative flex items-center justify-center h-screen p-10 overflow-hidden bg-white;
+    @apply relative flex items-center justify-center h-screen p-10 overflow-hidden bg-red-100;
+    @screen lg {
+        @apply  bg-white;
+    }
     &__container{
-        @apply flex justify-between items-center h-[600px] max-w-[1350px] w-full rounded-3xl px-28 py-14 bg-gradient-1;
+        @apply flex flex-col justify-between items-center h-[600px] max-w-[1350px] w-full rounded-3xl;
+        @screen lg {
+            @apply flex-row px-28 py-14 h-[600px] gap-9 bg-gradient-1;
+        }
         
     }
     &__titlesection{
@@ -23,9 +29,15 @@
         @apply rounded-3xl;
     }
     &__gradientimage{
-        @apply absolute top-10 right-[-40px];
+        @apply absolute top-0 right-[-10px];
+        @screen lg {
+            @apply top-10;
+        }
     }
     &__gradientgeneral{
-        @apply absolute left-[-60px] bottom-[-120px];
+        @apply absolute left-[-120px] bottom-[-120px];
+        @screen lg {
+            @apply left-[-60px];
+        }
     }
 }
