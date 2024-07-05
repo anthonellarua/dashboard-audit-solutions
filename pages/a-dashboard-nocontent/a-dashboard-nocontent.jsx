@@ -23,7 +23,12 @@ export default function ADashboardNoContent() {
                                     prevEl: `.${styles.customPrev}`,
                                 }}
                                 modules={[Navigation]}
-                                slidesPerView={2}
+                                slidesPerView={1}
+                                breakpoints={{
+                                    1024: {
+                                      slidesPerView: 2,
+                                    },
+                                  }}
                                 spaceBetween={12}
                                 className={styles.slider}>
                                     <SwiperSlide className={styles.slider__slide}>
@@ -48,6 +53,7 @@ export default function ADashboardNoContent() {
                                                 <span>30,000 USDC</span>
                                             </div>
                                         </div>
+                                        
                                     </SwiperSlide>
                                     <SwiperSlide className={styles.slider__slide}>
                                         <div className={styles.slider__title}>

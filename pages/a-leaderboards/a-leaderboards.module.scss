@@ -4,18 +4,18 @@
         @apply relative max-w-[1350px] w-full z-10;
     }
     &__containerinfo{
-        @apply relative flex flex-col w-full z-10 rounded-3xl px-14 py-10 gap-10 bg-white;
+        @apply relative flex flex-col w-full z-10 rounded-3xl lg:px-14 lg:py-10 gap-10 lg:bg-white;
     }
     &__title{
-        @apply w-2/5 text-4xl font-black text-primary_600_v2;
+        @apply lg:w-2/5 text-4xl font-black text-primary_600_v2;
     }
     
     &__table{
-        @apply flex flex-col w-full gap-6;
+        @apply flex flex-col w-full gap-6 lg:p-0 p-6 rounded-[40px] lg:bg-transparent bg-white;
     }
 
     &__header{
-        @apply flex justify-between w-full font-bold text-sm text-primary_600_v2;
+        @apply lg:flex justify-between w-full font-bold text-sm text-primary_600_v2 hidden;
     }
 
     &__headerdiv{
@@ -31,7 +31,7 @@
     }
 
     &__row{
-        @apply flex justify-between w-full p-4 pl-0 rounded-full bg-secondary_600_v2 text-sm;
+        @apply flex lg:flex-row flex-col justify-between w-full lg:p-4 pl-0 lg:rounded-full rounded-[20px] bg-secondary_600_v2 text-sm;
         &__viewprofile{
             @apply flex justify-between items-center gap-2 border-2 border-primary_400_v2 rounded-full px-3 py-3 text-sm text-primary_400_v2 font-medium cursor-pointer;
         }
@@ -39,16 +39,22 @@
             @apply min-w-[216px] text-primary_600_v2;
         }
         &__contentdiv{
-            @apply flex items-center justify-center w-full gap-2 text-center;
+            @apply flex items-center lg:justify-center justify-between w-full gap-2 lg:p-0 py-2 px-5 lg:border-[0px] border-[0.5px] border-secondary_200_v2 text-center;
         }
         &__contentbigdiv{
-            @apply flex items-center justify-center w-full gap-2 min-w-[216px] text-center;
+            @apply flex items-center lg:justify-center justify-between w-full flex min-w-[216px] lg:p-0 py-2 px-5 lg:border-[0px] border-[0.5px] border-secondary_200_v2 text-center;
+            &__tog{
+                @apply flex gap-2;
+            }
         }
         &__username{
             @apply text-base text-primary_600_v2 font-medium;
         }
+        &__responsive{
+            @apply lg:hidden block ;
+        }
     }
     &__degrade{
-        @apply absolute bottom-[-200px] right-[-200px];
+        @apply absolute bottom-[-200px] right-[-200px] lg:block hidden;
     }
 }

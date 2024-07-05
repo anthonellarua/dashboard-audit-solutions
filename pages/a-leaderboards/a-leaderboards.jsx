@@ -44,20 +44,22 @@ export default function ALeaderboards() {
                                         #1
                                     </div>
                                     <div className={styles.aleaderboards__row__contentbigdiv}>
-                                        <Image width={24} height={24} src="/image-avatar-big.png" alt="Wallet Icon"/>
-                                        <span className={styles.aleaderboards__row__username}>Username</span>
+                                        <div className={styles.aleaderboards__row__contentbigdiv__tog}>
+                                            <Image width={24} height={24} src="/image-avatar-big.png" alt="Wallet Icon"/>
+                                            <span className={styles.aleaderboards__row__username}>Username</span>
+                                        </div>
                                     </div>
                                     <div className={styles.aleaderboards__row__contentdiv}>
-                                        1
+                                        <span className={styles.aleaderboards__row__responsive}>Level</span> 1
                                     </div>
                                     <div className={styles.aleaderboards__row__contentbigdiv}>
-                                        Lorem ipsumLorem ipsum
+                                        <span className={styles.aleaderboards__row__responsive}>Speciality</span> Lorem ipsumLorem ipsum
                                     </div>
                                     <div className={styles.aleaderboards__row__contentbigdiv}>
-                                        github.com/0xWeisss0xWsss
+                                        <span className={styles.aleaderboards__row__responsive}>Bounties</span> github.com/0xWeisss0xWsss
                                     </div>
                                     <div className={styles.aleaderboards__row__contentdiv}>
-                                        4
+                                        <span className={styles.aleaderboards__row__responsive}>Cost rate</span> 4
                                     </div>
                                     <div className={styles.aleaderboards__row__contentdiv}>
                                         $10.00

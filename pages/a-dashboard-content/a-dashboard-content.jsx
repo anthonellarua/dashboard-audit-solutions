@@ -23,7 +23,13 @@ export default function ADashboardContent() {
                                     prevEl: `.${styles.customPrev}`,
                                 }}
                                 modules={[Navigation]}
-                                slidesPerView={2}
+                                slidesPerView={1}
+                                breakpoints={{
+                                    1024: {
+                                      slidesPerView: 2,
+                                    },
+                                  }}
+                                
                                 spaceBetween={12}
                                 className={styles.slider}>
                                     <SwiperSlide className={styles.slider__slide}>

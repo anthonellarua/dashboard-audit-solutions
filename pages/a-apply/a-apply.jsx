@@ -27,7 +27,7 @@ export default function AApply() {
                                 <p>Below you can find the application form to become an auditor. Please allow 2-3 weeks for your application to be reviewed. Incomplete applications will not be considered.</p>
                             </div>
                             <div className={styles.aapply__info__image}>
-                                <Image width={290} height={290} src="/img-a-audit.png" alt="" className={styles.aapply__image}/>
+                                <Image width={290} height={290} src="/img-a-audit.png" alt="" className={styles.aapply__info__image__img}/>
                                 <Image width={80} height={80} src="/degrade-type2.png" alt="" className={styles.aapply__degrade2}/>
                             </div>
                         </div>

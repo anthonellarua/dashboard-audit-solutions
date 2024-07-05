@@ -12,6 +12,9 @@ export default function ADashboardRequestedAudits() {
                     <span>Requested audits</span>
                 </div>
                 <div className={styles.adashboard__container}>
+                    <span className={styles.adashboard__iconback}>
+                        <Image width={40} height={40} src="/icons/Arrow_Left_MD.png" alt="" />
+                    </span>
                     <h2>Requested audits</h2>
                     <div>
                         <div className={styles.adashboard__item}>
@@ -23,7 +26,7 @@ export default function ADashboardRequestedAudits() {
                                 <span>Ends in 5 days</span>
                             </div>
                             <div className={styles.adashboard__item__view}>
-                                <span>View project</span>
+                                <span>View <p className={styles.adashboard__item__view__respon}>project</p></span>
                             </div>
                         </div>
                         <div className={styles.adashboard__item}>
@@ -35,7 +38,7 @@ export default function ADashboardRequestedAudits() {
                                 <span>Ends in 5 days</span>
                             </div>
                             <div className={styles.adashboard__item__view}>
-                                <span>View project</span>
+                                <span>View <p className={styles.adashboard__item__view__respon}>project</p></span>
                             </div>
                         </div>
                         <div className={styles.adashboard__item}>
@@ -47,7 +50,7 @@ export default function ADashboardRequestedAudits() {
                                 <span>Ends in 5 days</span>
                             </div>
                             <div className={styles.adashboard__item__view}>
-                                <span>View project</span>
+                                <span>View <p className={styles.adashboard__item__view__respon}>project</p></span>
                             </div>
                         </div>
                     </div>
